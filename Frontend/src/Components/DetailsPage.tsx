@@ -42,7 +42,7 @@ const DetailsPage: React.FC = () => {
   const [quantity, setQuantity] = useState<number>(1);
   
 
-  const API_BASE = "http://localhost:5555/api";
+  const API_BASE = "https://highway-delite-wppr.onrender.com/api";
 
   useEffect(() => {
     if (!id) return;
@@ -123,7 +123,7 @@ const DetailsPage: React.FC = () => {
         <div>
           <div className="rounded overflow-hidden mb-6">
             <img
-              src={experience.image?.startsWith("http") ? experience.image : `http://localhost:5555${experience.image}`}
+              src={experience.image?.startsWith("http") ? experience.image : `https://highway-delite-wppr.onrender.com${experience.image}`}
               alt={experience.title}
               className="w-[800px] max-h-[460px] object-cover"
             />

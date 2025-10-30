@@ -60,7 +60,7 @@ const AddExperience: React.FC = () => {
       data.append("about", formData.about);
       data.append("image", formData.image);
 
-      const res = await axios.post("http://localhost:5555/api/addExperiences", data, {
+      const res = await axios.post("https://highway-delite-wppr.onrender.com/api/addExperiences", data, {
         headers: { "Content-Type": "multipart/form-data" },
         withCredentials: true,
       });

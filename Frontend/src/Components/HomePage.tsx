@@ -31,7 +31,7 @@ const GetExperience: React.FC<HomePageProps> = ({ searchQuery = "" }) => {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const res = await axios.get("http://localhost:5555/api/getExperiences");
+        const res = await axios.get("https://highway-delite-wppr.onrender.com/api/getExperiences");
         setExperiences(res.data.data || []);
       } catch (err) {
         console.error(err);
@@ -67,7 +67,7 @@ const GetExperience: React.FC<HomePageProps> = ({ searchQuery = "" }) => {
             <div className="h-48 w-full overflow-hidden">
               {exp.image ? (
                 <img
-                  src={`http://localhost:5555${exp.image}`}
+                  src={`https://highway-delite-wppr.onrender.com${exp.image}`}
                   alt={exp.title}
                   className="h-full w-full object-cover hover:scale-105 transition-transform duration-500"
                 />

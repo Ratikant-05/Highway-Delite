@@ -15,7 +15,7 @@ interface CheckoutState {
   appliedPromo?: { type: "percentage" | "fixed"; discount: number } | null;
 }
 
-const API_BASE = "http://localhost:5555/api";
+const API_BASE = "https://highway-delite-wppr.onrender.com/api";
 
 const CheckoutPage: React.FC = () => {
   const navigate = useNavigate();
