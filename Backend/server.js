@@ -10,7 +10,7 @@ const app = express()
 const port = process.env.PORT
 
 app.use(cors({
-  origin:["http://localhost:5173"],
+  origin:["http://localhost:5173", "https://highway-delite-frontend-xc2t.onrender.com"],
   credentials:true
 }))
 app.use(express.urlencoded({extended:true}))
